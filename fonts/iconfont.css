@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1562242220996'); /* IE9 */
+  src: url('iconfont.eot?t=1562242220996#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOMAAsAAAAAB8AAAAM9AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqCbII/ATYCJAMQCwoABCAFhG0HVhu/BsiuMG7hiZQowXRD4WzG2kTpLSleFPHw337/22dmnmr6gmn7i+qZRSKphkYkkbwSxUKnVDyqNLu/+ksdIHaIjsYA84dnH3ySzwGAAuNUdawyttp52MpQkztvSyKL+CvGhDNPJ3f8t4grbh5EEEGAHkzkyCNqnoifXuL4/3PMdFUC+dc2l8qgNY72BjhuHVDmZdsJ3oGcoN8yvNalcNDXE2hbUsRjX0NbH/JXkGWBuOSgAvLPWJWG8tAU6hV7i7iuppmupo9wLfj9+CTDn6SWkbUHztTLqOqt59v1ea1ac8hDkE3nhnyIjG2QQpyr9J7gFWW38dI2J3vbAWlqSkw1NHqbXVVYfhRtk/7LIySZqCOlXbCCc5m3nlxA8DZCo6jLhhIZPoi+CUWXIFcglAX1IdTrGxVM73+5C+RuOtt/4UFQ0N07eTp/OaauvMvpiwfRuv8+aa7FnE9v5drh/biph5P3H689OXy2/rQ/zHPH+vmsoa9Eq+raoPImBeMP7hUT3Nnf3dVO97fR6j+zgu32/879cPIilGaqHK6l41OXYtd1qa4RY9yQ+fik9d/87y6W/KorVu7d1HfTG9NX05cHYyHhnVH/J+R7PQ3Pb5ZZ3wbntOE15s8/sYhqv4A4J4MXNiADQjU9yy0q+UmOBSLfTm//0d/4fb2cDCt7dgp4XhfyPIhWiu7SFy0zZX9E1rGpWApiK8VQcqkdK3Z65emENg1SQXDsxxT6WedSQtMsgaRhEbKmdciC3QY1HStQ17QT2rZqPNwxwXiJ0sIW2wjC0CtI+p5CNvQJWbDfoWbuJ9QNwwvaDkbUmR0bwhFYy0DgIGNxHjskXSPMwQPD8h6g04rA0oqAOgDM7Uhgq2e+0AgasCk2uGeojXOCCdNV3IBuBoqiY4PpTpC4yc65UWKOrfoik6SrKNBeDBBwQIaJ5mEOEp2GeO25wMLP9wDUNIWANTQ0hQcAxs0xOmZlYumAbNRqnRpu5SVuMygbjiMwgtGpsAY0CygUOsyonuUEJJyJfUDaUMJMW5GuWtPyevUNd0Ab+Z4SKXKUqBkeZ0yfLWYOaufFkm7MhwPVi4kwozMHBzKtKL4ENAUcCAEAAAA=') format('woff2'),
+  url('iconfont.woff?t=1562242220996') format('woff'),
+  url('iconfont.ttf?t=1562242220996') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1562242220996#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right-copy:before {
+  content: "\e602";
+}
+
+.icon-ego-favoritefull:before {
+  content: "\e611";
+}
+
+.icon-fenlei:before {
+  content: "\e625";
+}
+
