@@ -1,0 +1,637 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    background: #fafafa;
+}
+
+
+/* 注册一开始--------------------------------- */
+
+.register_font {
+    float: left;
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: bold;
+    color: #999;
+    margin: 0px 15px;
+}
+
+.register_content,
+.nTab {
+    width: 980px;
+    margin: 10px auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.register_content .register {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.register_content .register_box {
+    width: 380px;
+    height: 380px;
+    float: right;
+    margin: 10px 0px 0px 10px;
+    padding-top: 20px;
+}
+
+.register_content .register_box ul {
+    width: 295px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    float: left;
+    font-size: 14px;
+}
+
+.register_content .register_box li {
+    position: relative;
+}
+
+.register_content .register_box span {
+    display: inline-block;
+}
+
+.register_content .register_box .register-icon,
+.register_box_2 .register-icon {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+}
+
+.register_content .register_pic {
+    width: 500px;
+    height: 380px;
+    float: left;
+    margin: 10px 30px;
+}
+
+
+/* 注册一结束---------------------------------end */
+
+
+/* 注册二开始--------------------------------- */
+
+.register_content .register_state {
+    width: 520px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    background: #fffdf3;
+    padding-left: 20px;
+    border: 2px solid #f1ddb5;
+}
+
+.register_content .register_box_mid {
+    width: 600px;
+    min-height: 500px;
+    margin: 10px auto;
+}
+
+register_content .register_box_mid p {
+    width: 300px;
+    margin: 20px auto 0 auto;
+    line-height: 40px;
+}
+
+register_content .register_box_mid span {
+    display: inline-table;
+    line-height: 38px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.register_content .register_box_mid dl {
+    overflow: hidden;
+    line-height: 35px;
+    padding: 0px;
+}
+
+.register_content .register_box_mid dt {
+    width: 150px;
+    text-align: right;
+    float: left;
+}
+
+.register_content .register_box_mid dd {
+    width: 370px;
+    text-align: left;
+    float: left
+}
+
+.password_length {
+    width: 370px;
+    height: 13px!important;
+    line-height: 13px!important;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    text-align: center;
+}
+
+.password_length span {
+    width: 30px;
+    height: 13px!important;
+    float: left;
+    margin-right: 5px;
+    line-height: 13px!important;
+    color: #fff;
+}
+
+.button_1 {
+    margin: 30px auto 0px;
+    width: 250px;
+}
+
+.button_2,
+.button_3 {
+    margin: 30px 15px 0px 15px;
+    width: 140px;
+}
+
+
+/* 注册二 结束--------------------------------- */
+
+
+/* 卖家认证 开始--------------------------------- */
+
+.approve_buyer {
+    width: 1200px;
+    margin: 10px auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.approve_buyer h1 {
+    line-height: 40px;
+}
+
+.approve_buyer ul,
+.approve_buyer ol {
+    width: 1100px;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.approve_buyer ul li,
+.approve_buyer ol li {
+    width: 530px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.approve_buyer ol li {
+    width: 100%;
+    height: auto;
+}
+
+.approve_buyer .font_span,
+.approve_buyer .buyer_left {
+    width: 160px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    float: left;
+}
+
+.approve_buyer .font_content {
+    width: 360px;
+    line-height: 20px;
+    display: inline;
+    text-align: left;
+    float: left;
+}
+
+.approve_buyer .buyer_content {
+    width: 900px;
+    min-height: 40px;
+    text-align: left;
+    float: left;
+    line-height: 24px;
+}
+
+.approve_buyer .font_content b {
+    margin-right: 15px;
+    font-weight: normal
+}
+
+.approve_buyer .approve_buyer_min {
+    width: 900px;
+    margin: 10px auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.approve_buyer .approve_buyer_min h1 {
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.approve_buyer .approve_buyer_min ul {
+    width: 900px;
+    padding: 0;
+    margin: 0px;
+}
+
+.approve_buyer .approve_buyer_min li {
+    width: 440px;
+    min-height: 30px;
+    line-height: 30px;
+    margin: 5px 0;
+}
+
+.approve_buyer .approve_buyer_min .font_span_min {
+    width: 100px;
+    line-height: 30px;
+    display: inline;
+    text-align: right;
+    margin-right: 10px;
+    float: left;
+}
+
+.register_content dt .space {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    background: #E50011;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.register_content dd {
+    width: 960px;
+    border-left: 2px solid #ddd;
+    margin-left: 10px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.register_content dd ul {
+    width: 940px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+.register_content dd ul li {
+    height: auto;
+    overflow: hidden;
+}
+
+.register_content dd .buyer_Info,
+.register_content dd .buyer_button {
+    float: left;
+    background: #fff;
+    min-height: 60px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.register_content dd .buyer_Info {
+    width: 770px;
+    border-right: none;
+}
+
+.register_content dd .buyer_button {
+    width: 90px;
+    border-left: none;
+    text-align: right;
+}
+
+.register_content dd .buyer_Info li,
+.register_content dd .buyer_button li {
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*------找回密码整个流程 开始 --------*/
+
+.stepflex,
+.stepflex_order {
+    width: 640px;
+    border-top: 5px solid #ccc;
+    text-align: center;
+    margin: 30px auto
+}
+
+.stepflex_order {
+    /*width:800px;*/
+}
+
+.stepflex dl,
+.stepflex_order dl {
+    float: left;
+    position: relative;
+    width: 160px;
+    top: -5px;
+    border-top: 5px solid #ccc
+}
+
+.s-num {
+    position: relative;
+    margin: -15px auto 0;
+    color: #fff;
+    font-weight: 700;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/step2013.png);
+    line-height: 23px
+}
+
+.s-text {
+    color: #ccc
+}
+
+dl.doing {
+    border-top-color: #7abd54
+}
+
+.doing .s-num {
+    background-position: -23px 0
+}
+
+.doing .s-text {
+    color: #7abd54
+}
+
+dl.done {
+    border-top-color: #caecb6
+}
+
+.done .s-num {
+    background-position: -46px 0
+}
+
+.done .s-text {
+    color: #caecb6
+}
+
+.first s,
+.last b,
+.doing s,
+.doing b {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    line-height: 0;
+    font-size: 0;
+    top: -5px;
+    background-image: url(../images/step2013.png);
+    overflow: hidden
+}
+
+.stepflex s,
+.stepflex_order s {
+    left: 0;
+}
+
+.stepflex b,
+.stepflex_order b {
+    right: 0
+}
+
+.first s {
+    background-position: 0 -24px;
+    background-color: #fff
+}
+
+.last b {
+    background-position: -5px -24px;
+    background-color: #fff
+}
+
+.doing s {
+    background-position: -23px -24px
+}
+
+.doing b {
+    background-position: -28px -24px;
+    background-color: #ccc
+}
+
+.doing.normal s {
+    background-color: #caecb6
+}
+
+.doing.last s {
+    background-color: #caecb6
+}
+
+.doing.last b {
+    background-color: #fff
+}
+
+.done s {
+    background-position: -46px -24px
+}
+
+.done b {
+    background-position: -51px -24px
+}
+
+
+/*第二种注册方式样式开始*/
+
+.nTab .TabTitle {
+    clear: both;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.nTab .TabTitle ul {
+    width: 300px;
+    margin: 0;
+    padding: 3px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.nTab .TabTitle li {
+    float: left;
+    width: 140px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.nTab .TabTitle .active {
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    border-top: 2px solid #2daae4;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2daae4;
+}
+
+.nTab .TabTitle .normal {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nTab .TabContent {
+    min-height: 500px;
+    overflow: hidden;
+    text-align: left;
+    background: #fff;
+    margin: 0px auto;
+    padding: 20px;
+    margin-top: -1px;
+    border: 1px #e8e8e8 solid;
+}
+
+.none {
+    display: none;
+}
+
+.register_box_2 {
+    width: 750px;
+    min-height: 200px;
+    float: left;
+    margin: 30px 10px;
+}
+
+.register_box_2 ul {
+    padding: 0px;
+    margin: auto;
+}
+
+.register_box_2 li {
+    margin: 0;
+    height: 50px;
+    padding-top: 9px;
+    height: 60px;
+    line-height: 34px;
+}
+
+.register_box_2 li .regist_font {
+    width: 170px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+}
+
+.register_box_2 li .regist_item_ifo {
+    position: relative;
+    min-width: 280px;
+    max-width: 650px;
+    float: left;
+}
+
+.register_box_2 li .regist_text {
+    width: 270px;
+    padding: 0 4px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-left: 2px;
+}
+
+.register_pic_small {
+    width: 140px;
+    height: 380px;
+    float: left;
+    margin: 40px 10px;
+}
+
+.register_box_3 {
+    width: 860px;
+    min-height: 180px;
+    margin: 30px auto;
+}
+
+.register_box_3 p {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.register_box_3 dl {
+    width: 260px;
+    height: 160px;
+    margin: 10px;
+    float: left;
+    line-height: 26px;
+}
+
+#approve_buyer {
+    width: 1080px;
+}
+
+#approve_buyer ul li {
+    width: 470px;
+}
+
+#approve_buyer ul {
+    width: 960px;
+}
+
+#code div {
+    margin-top: 40px;
+    width: 50%;
+    height: 166px;
+}
+
+#code {
+    overflow: hidden;
+}
+
+#code .left {
+    float: left;
+    text-align: left;
+}
+
+#code .left span {
+    display: block;
+}
+
+#code .right {
+    width: 30%;
+    float: right;
+}
+
+#code .button_4 {
+    padding: 5px 30px;
+}
+
+#code .send {
+    background: #cc0000;
+}
+
+#code .send a {
+    color: #fff;
+}
+
+.stepflex_order_oto dl {
+    width: 200px;
+}

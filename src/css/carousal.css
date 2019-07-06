@@ -1,0 +1,182 @@
+ul,
+ol {
+    padding: 0;
+}
+
+
+/*轮播图:浏览器缩小全屏后会出现图片不居中和页面右侧为空*/
+
+.zoom_inout {
+    width: 100%!important
+}
+
+.unslider_banner {
+    position: relative;
+    overflow: auto;
+    text-align: center;
+}
+
+.unslider_banner li {
+    list-style: none;
+}
+
+.unslider_banner ul li {
+    float: left;
+}
+
+
+/* 轮播图共用样式 */
+
+.unslider .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+.unslider .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.unslider .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+.unslider #al {
+    left: 15px;
+}
+
+.unslider #ar {
+    right: 15px;
+}
+
+
+/* 类目子站轮播 */
+
+#b04 {
+    width: 980px;
+    position: relative;
+    text-align: center;
+    margin-left: 220px;
+}
+
+#b04 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+#b04 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+#b04 .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+#b04 .shiftarrow {
+    position: absolute;
+    top: 200px;
+}
+
+#b04 #al {
+    left: 15px;
+}
+
+#b04 #ar {
+    right: 15px;
+}
+
+
+/* 首页轮播 */
+
+#b03 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+#b03 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+#b03 .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+
+/* 类目子站楼层导航轮播图 */
+
+.slider-nav {
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    text-align: center;
+    bottom: 35px;
+    cursor: default;
+    position: absolute;
+}
+
+.slider-nav li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: background .5s, opacity .5s;
+}
+
+.slider-nav li.slider-selected {
+    background: #fff;
+    opacity: 1;
+}
+
+
+/* 地区子站轮播 */
+
+#advanceb01 .shiftarrow {
+    position: absolute;
+    top: 150px;
+}

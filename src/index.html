@@ -12,8 +12,7 @@
     <link rel='stylesheet' href='css/basic.css'>
     <link rel='stylesheet' href='fonts/iconfont.css'>
     <link rel='stylesheet' href='css/index.css'>
-
-
+    <link rel='stylesheet' href='css/carousal.css'>
 </head>
 
 <body>
@@ -165,11 +164,7 @@
                         var imgDomain = "https://gelimall.oss-cn-shenzhen.aliyuncs.com";
                     </script>
                     <script type="text/javascript" src="/assets/js/all_classify.js"></script>
-                    <!-- 服务公告<script type="text/javascript">
-		$(document).ready(function(){
-			$("#noticeArea").load("/noticeFragement");
-		});
-	</script> -->
+
                     <style>
                         .n_price {
                             color: red;
@@ -1306,7 +1301,29 @@
             </div>
         </div>
     </div>
+    <!-- 轮播图 -->
+
     <div class="unslider_banner zoom_inout has-dots" id="b03" style="overflow: hidden; width: 1519px; height: 450px;">
+        <div>
+            <ul>
+                <li>
+                    <a href=''><img src='https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/20/40e710dc-27ab-4884-a0d5-1bd3b429051c.jpg'></a>
+                </li>
+
+                <li>
+                    <a href=''><img src='https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/7/4/314b1293-762f-44fd-a558-c1dd01767ef7.jpg'></a>
+                </li>
+
+                <li>
+                    <a href=''><img src='https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/12/20/0f72f3a2-0f47-4447-937d-111e30822a6b.jpg'></a>
+                </li>
+            </ul>
+            <ol class='dots'>
+                <li class='dot'></li>
+                <li class='dot active'></li>
+                <li class='dot'></li>
+            </ol>
+        </div>
     </div>
     <!-- 热销推荐 -->
     <div id='content'>
@@ -1403,8 +1420,6 @@
                         <!-- min_list end-->
                     </div>
                     <!--catalogueList_toplist end -->
-
-
                     <span class="cList_pic" style="">
 							<a class="cursor" onclick="adVisit('189','https://mall.gree.com/goods/product/details?id=1000028960&amp;skuId=1000046220',3)" target="_blank" title="冰箱">
 								<!--转换-->
@@ -1420,10 +1435,7 @@
                 <!--楼层右侧title开始-->
                 <div class="FloorList-tit">
                     <ul id="1">
-                        <!-- <li class="active" style="background:rgb(254,133,0)">休闲零食<b></b></li>
-						<li>五谷杂粮<b></b></li>
-						<li>饮料冲调<b></b></li>
-						<li>休闲零食<b></b></li>  style="background:rgb(216, 58, 73)"-->
+
                         <li class="active" style="background:rgb(216, 58, 73)" onmousemove="focusLoadfloor('168','193','1','1','216, 58, 73',this)">冰箱/洗衣机
                             <b></b>
                             <input type="hidden" id="168193" value="false">
@@ -1524,10 +1536,6 @@
                     <!--楼层模板4  一个UL -->
                     <!--楼层模板4 一个ul-结束-->
 
-
-
-
-
                     <!--楼层模板8 一个ul-结束-->
                 </div>
                 <!-- Floor_right end-->
@@ -1536,49 +1544,7 @@
             <!-- Floor_product end-->
         </div>
         <div id="floor2" name="floor2">
-            <script type="text/javascript">
-                $(".floorBunner").each(function(i, obj) {
-                    var width = $(obj).width();
-                    var height = $(obj).height();
-                    var size = $(obj).find("img").size();
-                    var avgWidth = width / size;
-                    $(obj).find("img").each(function(i, img) {
-                        $(img).css("width", avgWidth).css("height", height);
-                    });
-                });
-                //鼠标移到tab上
-                function focusLoadfloor(id, redId, count, templateId, col, obj) {
-                    var tabs = $(obj).parent().parent().find(".floorProduction");
-                    var tabs2 = $(obj).parent().parent().find(".active");
-                    tabs2.removeClass('active');
-                    tabs2.css('background', '');
-                    tabs.removeClass('active');
-                    tabs.css('background', '');
-                    $(obj).addClass('active');
-                    $(obj).css('background', "rgb(" + col + ")");
-                    var result = $("#" + id + redId).val();
-                    if (result == "true") {
-                        var data = $("#" + id + redId + "_value").val();
-                        $("#floorId" + redId).replaceWith(data);
-                        return;
-                    }
-                    $.ajax({
-                        type: "post",
-                        url: "/floor/onloadfloor",
-                        data: "subTagId=" + id + "&floorId=" + redId + "&count=" + count + "&templateId=" + templateId,
-                        async: false,
-                        dataType: "text",
-                        success: function(data) {
-                            $("#floorId" + redId).replaceWith(data);
-                            $("#" + id + redId + "_value").val(data);
-                        },
-                        error: function() {
 
-                        }
-                    });
-                    $("#" + id + redId).val("true");
-                }
-            </script>
             <!--获取oss和ftp切换的状态值-->
 
             <!--楼层顶部广告位-->
@@ -1599,7 +1565,6 @@
                         <div class="catalogueList_toplist" style="width: 208px;height: auto;float: left;position: absolute">
                             <ul style="color: rgb(216, 58, 73)">
                             </ul>
-
                             <div class="min_list">
                             </div>
                             <div class="min_list">
@@ -1677,10 +1642,6 @@
                         <!--楼层模板4  一个UL -->
                         <!--楼层模板4 一个ul-结束-->
 
-
-
-
-
                         <!--楼层模板8 一个ul-结束-->
                     </div>
                     <!-- Floor_right end-->
@@ -1693,49 +1654,7 @@
             <!-- 楼层底部广告 -->
         </div>
         <div id="floor3" name="floor3">
-            <script type="text/javascript">
-                $(".floorBunner").each(function(i, obj) {
-                    var width = $(obj).width();
-                    var height = $(obj).height();
-                    var size = $(obj).find("img").size();
-                    var avgWidth = width / size;
-                    $(obj).find("img").each(function(i, img) {
-                        $(img).css("width", avgWidth).css("height", height);
-                    });
-                });
-                //鼠标移到tab上
-                function focusLoadfloor(id, redId, count, templateId, col, obj) {
-                    var tabs = $(obj).parent().parent().find(".floorProduction");
-                    var tabs2 = $(obj).parent().parent().find(".active");
-                    tabs2.removeClass('active');
-                    tabs2.css('background', '');
-                    tabs.removeClass('active');
-                    tabs.css('background', '');
-                    $(obj).addClass('active');
-                    $(obj).css('background', "rgb(" + col + ")");
-                    var result = $("#" + id + redId).val();
-                    if (result == "true") {
-                        var data = $("#" + id + redId + "_value").val();
-                        $("#floorId" + redId).replaceWith(data);
-                        return;
-                    }
-                    $.ajax({
-                        type: "post",
-                        url: "/floor/onloadfloor",
-                        data: "subTagId=" + id + "&floorId=" + redId + "&count=" + count + "&templateId=" + templateId,
-                        async: false,
-                        dataType: "text",
-                        success: function(data) {
-                            $("#floorId" + redId).replaceWith(data);
-                            $("#" + id + redId + "_value").val(data);
-                        },
-                        error: function() {
 
-                        }
-                    });
-                    $("#" + id + redId).val("true");
-                }
-            </script>
             <!--获取oss和ftp切换的状态值-->
 
             <!--楼层顶部广告位-->
@@ -1839,10 +1758,6 @@
                         <!--楼层模板4  一个UL -->
                         <!--楼层模板4 一个ul-结束-->
 
-
-
-
-
                         <!--楼层模板8 一个ul-结束-->
                     </div>
                     <!-- Floor_right end-->
@@ -1855,52 +1770,8 @@
             <!-- 楼层底部广告 -->
         </div>
 
-
-
         <div id="floor3" name="floor3">
-            <script type="text/javascript">
-                $(".floorBunner").each(function(i, obj) {
-                    var width = $(obj).width();
-                    var height = $(obj).height();
-                    var size = $(obj).find("img").size();
-                    var avgWidth = width / size;
-                    $(obj).find("img").each(function(i, img) {
-                        $(img).css("width", avgWidth).css("height", height);
-                    });
-                });
-                //鼠标移到tab上
-                function focusLoadfloor(id, redId, count, templateId, col, obj) {
-                    var tabs = $(obj).parent().parent().find(".floorProduction");
-                    var tabs2 = $(obj).parent().parent().find(".active");
-                    tabs2.removeClass('active');
-                    tabs2.css('background', '');
-                    tabs.removeClass('active');
-                    tabs.css('background', '');
-                    $(obj).addClass('active');
-                    $(obj).css('background', "rgb(" + col + ")");
-                    var result = $("#" + id + redId).val();
-                    if (result == "true") {
-                        var data = $("#" + id + redId + "_value").val();
-                        $("#floorId" + redId).replaceWith(data);
-                        return;
-                    }
-                    $.ajax({
-                        type: "post",
-                        url: "/floor/onloadfloor",
-                        data: "subTagId=" + id + "&floorId=" + redId + "&count=" + count + "&templateId=" + templateId,
-                        async: false,
-                        dataType: "text",
-                        success: function(data) {
-                            $("#floorId" + redId).replaceWith(data);
-                            $("#" + id + redId + "_value").val(data);
-                        },
-                        error: function() {
 
-                        }
-                    });
-                    $("#" + id + redId).val("true");
-                }
-            </script>
             <!--获取oss和ftp切换的状态值-->
 
             <!--楼层顶部广告位-->
@@ -2000,13 +1871,8 @@
                                 <label style="color: #c00;font-size: 16px;cursor:pointer;display:block;font:700 18px/24px Verdana,Arial;text-align:center;margin-top:5px;">￥6999.00</label>
                             </li>
                         </ul>
-
                         <!--楼层模板4  一个UL -->
                         <!--楼层模板4 一个ul-结束-->
-
-
-
-
 
                         <!--楼层模板8 一个ul-结束-->
                     </div>
@@ -2016,32 +1882,10 @@
                 <!-- Floor_product end-->
             </div>
             <!--wid end -->
-
             <!-- 楼层底部广告 -->
         </div>
     </div>
     <div id="foot_noe">
-        <script>
-            $(function() {
-                var cookies = document.cookie.split(';');
-                var flag = true;
-                for (var i = 0; i < cookies.length; i++) {
-                    if (cookies[i].indexOf('cityRegionCode') != -1) {
-                        flag = false;
-                        var cityRegionCode = cookies[i].split('=')[1];
-                        if (cityRegionCode) {
-                            $("#reputation").hide()
-                        } else {
-                            $('#bgDiv').show()
-                            $("#reputation").show()
-                        }
-                    }
-                }
-                if (flag) {
-                    $('#bgDiv').show()
-                }
-            })
-        </script>
 
         <!--底部信誉介绍开始-->
         <div class="indexfoot_Reputation" id="footerService">
@@ -2073,16 +1917,6 @@
                 </li>
             </ul>
         </div>
-        <!-- <ul>
-		<li><a href="#"><img src="$staticPath/images/Reputation_1.jpg"
-				border="0"></a></li>
-		<li><a href="#"><img src="$staticPath/images/Reputation_2.jpg"
-				border="0"></a></li>
-		<li><a href="#"><img src="$staticPath/images/Reputation_3.jpg"
-				border="0"></a></li>
-		<li><a href="#"><img src="$staticPath/images/Reputation_4.jpg"
-				border="0"></a></li>
-	</ul> -->
     </div>
     <!-- 底部导航 -->
     <div id="foot">
@@ -2092,24 +1926,16 @@
             }
         </style>
         <ul id="document">
-
-
             <li>
                 <dl>
                     <dt>购物指南</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=24">免责声明</a></dd>
+                    <dd><a href="">免责声明</a></dd>
 
-                    <dd><a href="https://mall.gree.com//document/2?mallId=9">购物流程</a></dd>
+                    <dd><a href="">购物流程</a></dd>
 
+                    <dd><a href="">密码管理</a></dd>
 
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=8">密码管理</a></dd>
-
-
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=2">注册/登录</a></dd>
-
-
+                    <dd><a href="">注册/登录</a></dd>
 
                 </dl>
             </li>
@@ -2117,55 +1943,34 @@
             <li>
                 <dl>
                     <dt>售后服务</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=30">商城退换货扣运费标准</a></dd>
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=15">服务时效</a></dd>
-
-
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=14">安装/维修</a></dd>
-
-
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=13">退换货说明</a></dd>
-
-
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=4">售后服务政策</a></dd>
-
-
-
+                    <dd><a href="">商城退换货扣运费标准</a></dd>
+                    <dd><a href="">服务时效</a></dd>
+                    <dd><a href="">安装/维修</a></dd>
+                    <dd><a href="">退换货说明</a></dd>
+                    <dd><a href="">售后服务政策</a></dd>
                 </dl>
             </li>
 
             <li>
                 <dl>
                     <dt>常见问题</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=23">订单常见问题说明</a></dd>
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=22">空调常见问题说明</a></dd>
-
-
-
-                    <dd><a href="https://mall.gree.com//document/2?mallId=5">冰箱常见问题说明</a></dd>
-
-
-
+                    <dd><a href="">订单常见问题说明</a></dd>
+                    <dd><a href="">空调常见问题说明</a></dd>
+                    <dd><a href="">冰箱常见问题说明</a></dd>
                 </dl>
             </li>
 
             <li>
                 <dl>
                     <dt>联系我们</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=6">联系我们</a></dd>
-
+                    <dd><a href="">联系我们</a></dd>
                 </dl>
             </li>
 
             <li>
                 <dl>
                     <dt>服务查询</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=26">配送服务查询</a></dd>
+                    <dd><a href="">配送服务查询</a></dd>
 
                 </dl>
             </li>
@@ -2173,7 +1978,7 @@
             <li>
                 <dl>
                     <dt>商城支付</dt>
-                    <dd><a href="https://mall.gree.com//document/2?mallId=29">商城支付</a></dd>
+                    <dd><a href="">商城支付</a></dd>
                 </dl>
             </li>
         </ul>
@@ -2188,6 +1993,9 @@
         </div>
 
     </div>
+    <script src='script/js/jquery.js'></script>
+    <script src='script/js/jquery.cookie.js'></script>
+    <script src='script/js/index.js'></script>
 </body>
 
 </html>
