@@ -8,5 +8,5 @@ echo $rows;
    $tel=$_POST['telphone'];
    $pass=sha1($_POST['password']);
  mysql_query("insert into usertable(tel,password)values('$tel','$pass')");
- header('location:http://10.31.158.60/gree/gree/src/index.html');
+ header('location:http://10.31.158.60:8080/gree/gree/src/index.html');
  }

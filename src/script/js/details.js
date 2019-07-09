@@ -2,7 +2,7 @@
 ! function($) {
     let $sid = location.search.slice(5)
     $.ajax({
-        url: 'http://10.31.158.60/gree/gree/php/details.php',
+        url: 'http://10.31.158.60:8080/gree/gree/php/details.php',
         data: {
             sid: $sid
         },
@@ -159,20 +159,26 @@
             $arrnum = getcookie('cookienum').split(','); //cookie商品的num
         }
     }
-
+    //
     $('#addCart').on('click', function() {
-        cookietoarray()
-        if ($.inArray($sid, $arrsid) != -1) {
-            var num = parseInt($arrnum[$.inArray($sid, $arrsid)]) + parseInt($('#productNumD').val());
-            $arrnum[$.inArray($sid, $arrsid)] = num
-            addcookie('cookienum', $arrnum.toString(','), 10);
-        } else {
-            $arrsid.push($sid)
+            cookietoarray()
 
-            addcookie('cookiesid', $arrsid.toString(), 10);
-            $arrnum.push($('#productNumD').val())
-            addcookie('cookienum', $arrnum.toString(','), 10);
-        }
+            if ($.inArray($sid, $arrsid) != -1) {
+                var num = parseInt($arrnum[$.inArray($sid, $arrsid)]) + parseInt($('#productNumD').val());
+                $arrnum[$.inArray($sid, $arrsid)] = num
+                addcookie('cookienum', $arrnum.toString(','), 10);
+            } else {
+                $arrsid.push($sid)
 
+                addcookie('cookiesid', $arrsid.toString(), 10);
+                $arrnum.push($('#productNumD').val())
+                addcookie('cookienum', $arrnum.toString(','), 10);
+            }
+            $('#addCartBomb').css('display', 'block') //加入购物车弹出框
+        })
+        //点击继续浏览当前页面
+    $('.button_3').on('click', function() {
+        $('#addCartBomb').css('display', 'none')
     })
+
 }(jQuery)

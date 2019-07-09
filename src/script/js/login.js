@@ -17,7 +17,7 @@
                 pass: $passvalue
 
             },
-            url: 'http://10.31.158.60/gree/gree/php/login.php'
+            url: 'http://10.31.158.60:8080/gree/gree/php/login.php'
         }).done(function(data) {
 
             if (data == 1) { //验证用户名和密码是否一致

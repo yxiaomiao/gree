@@ -20,7 +20,7 @@
                     telflag = false
                 } else {
                     $.ajax({
-                        url: 'http://10.31.158.60/gree/gree/php/registor.php',
+                        url: 'http://10.31.158.60:8080/gree/gree/php/registor.php',
                         dataType: 'json',
                         data: {
                             tel: this.value

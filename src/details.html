@@ -11,15 +11,10 @@
     <meta name="Keywords" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
     <link rel='stylesheet' href='css/basic.css'>
     <link rel='stylesheet' href='fonts/iconfont.css'>
-
     <link rel='stylesheet' href='css/details.css'>
-
-
-
 </head>
 
 <body>
-
     <!-- 顶部导航 -->
     <div class="header_top" id="header_top">
         <div class="top_mid po_re">
@@ -200,6 +195,7 @@
                 <div id="vertical" class="bigImg">
 
                 </div>
+
                 <!--bigImg end-->
 
                 <div class="smallImg">
@@ -212,7 +208,7 @@
                     <div class="scrollbutton smallImgDown"><i id='right' style='float:none;'>&gt</i></div>
                 </div>
                 <!--smallImg end-->
-                <div id="bigView" style="width: 472.362px; height: 422.111px; top: 80px; left: 430px; display: none;">
+                <div id="bigView" style="width: 472.362px; height: 422.111px; top: 0px; left: 430px; display: none;">
 
                 </div>
                 <!--下图片下面的分享信息 商品信息 开始 -->
@@ -220,7 +216,7 @@
                     <span class="mar_l10 fr cursor js_favourite mar_b10">
 
                                                             <span id="shoucangshangpin">
-                                     <i class="demo-icons fa-star font_ffd font_14" style="color: #9c9c9c"></i>
+                                     <i class="demo-icons  font_ffd font_14 iconfont" style="color: #9c9c9c">&#xe611;</i>
                                      <a title="点击收藏商品">收藏商品</a>
                                 </span>
 
@@ -603,6 +599,27 @@
             <!-- 右侧div结束-->
         </div>
         <!--1160 -->
+    </div>
+    <!-- 加入购物车弹出 -->
+    <div id="addCartBomb" class="po_fai" style="display:none">
+        <div class="po_fai_bg"></div>
+        <div class="po_main">
+            <ul>
+                <li class="font_18">
+                    <i class="fa-info-circle demo-icons font_24 mar_r10"></i>
+                    <span class="title">加入购物车成功！</span>
+                </li>
+                <li class="msg font_14"></li>
+                <li>
+                    <button type="button" class="button_3 hei_40" style="margin-right: 10px;">
+                        继续浏览
+                    </button>
+                    <button type="button" class="button_1 hei_40" onclick="location.href='cart.html'">
+                        去购物车结算
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src='script/js/jquery.js'></script>
     <script src='script/js/cookie.js'></script>

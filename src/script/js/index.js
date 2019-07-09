@@ -12,7 +12,16 @@
         $('#top_login_id').get(0).innerHTML = `<a href="login.html">登录</a><i class="mar_lr10 font_ec">|</i><a href="registor.html">注册</a>`
     }
 }(jQuery)
+//购物车获取cookie数据
+;
+! function($) {
+    $('#shop_car').hover(function() { //鼠标经过，显示mini_cart
+        $('#mini_cart').css('display', 'block')
 
+    }, function() {
+        $('#mini_cart').css('display', 'none')
+    })
+}(jQuery)
 //头部搜索框固定定位
 ;
 ! function($) {
@@ -161,18 +170,20 @@
 ;
 ! function($) {
     $.ajax({
-        url: 'http://10.31.158.60/gree/gree/php/index.php',
+        url: 'http://10.31.158.60:8080/gree/gree/php/index.php',
         dataType: 'json'
     }).done(function(piclist) {
         let str = ''
+
         $.each(piclist, function(index, value) {
+            console.log(value)
             str += `<li>
             <!--商品图片 -->
-            <a class="cursor" href='http://10.31.158.60/gree/gree/src/details.html?sid=${value.picid}' title="${value.title}" target="_blank">
+            <a class="cursor" href='http://10.31.158.60:8080/gree/gree/src/details.html?sid=${value.picid}' title="${value.title}" target="_blank">
                 <!--转换-->
                                                         <img src="${value.url}" width="160" height="160" style="margin-left: 18px">
                                                 </a>
-            <a class="cursor" href='http://10.31.158.60/gree/gree/src/details.html?sid=${value.picid}' style='color: #666;font-size: 14px; line-height: 18px;width: 180px;display: block;overflow: hidden;margin-top: 5px; margin-left: 10px; height: 36px; word-break: break-all;'>
+            <a class="cursor" href='http://10.31.158.60:8080/gree/gree/src/details.html?sid=${value.picid}' style='color: #666;font-size: 14px; line-height: 18px;width: 180px;display: block;overflow: hidden;margin-top: 5px; margin-left: 10px; height: 36px; word-break: break-all;'>
                ${value.title}智能垃圾桶 9L 环保自动开关桶盖 GA-0901 黄色 
             </a>
             <label style="color: #c00;font-size:16px;cursor:pointer;display:block;font:700 18px/24px Verdana,Arial;text-align:center;margin-top:5px;">
@@ -188,4 +199,22 @@
             height: 465
         })
     })
+
+
+}(jQuery)
+//3楼tab切换
+;
+! function($) {
+    $('.FloorList-tit ul li').each(function(index, element) {
+
+        $(this).on('mousemove', function() {
+            $(this).addClass('active floorProduction').css('background', 'rgb(216, 58, 73)').siblings().css('background', '').removeClass()
+            $(this).parents('.Floor_right').find('.FloorList ul').eq($(this).index()).show().siblings().hide()
+
+        })
+
+    })
+
+
+
 }(jQuery)
