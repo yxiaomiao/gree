@@ -1,3 +1,49 @@
+/* 搜索框固定定位 */
+
+#header.active {
+    position: fixed;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    top: -110px;
+    z-index: 100;
+    transform: translateY(100%);
+}
+
+
+/* banner 轮播 */
+
+#b03 ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 450px;
+    overflow: hidden;
+}
+
+#b03 ul li {
+    width: 1520px;
+    overflow: hidden;
+    height: 450px;
+}
+
+#right {
+    position: absolute;
+    top: 50%;
+    font-size: 32px;
+    display: none
+}
+
+#right {
+    right: 40px;
+}
+
+#floorId189 li:first-child {
+    width: 393px;
+    height: 465px
+}
+
+
 /* 热销推荐 */
 
 .title-font {

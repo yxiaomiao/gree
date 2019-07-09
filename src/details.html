@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城</title>
+    <link href='img/favicon.ico' rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
+    <meta name="Keywords" content="格力商城-格力电器唯一官方网上商城，即送即装，全场包邮至乡镇村!网购空调、冰箱、空气能热水器、生活电器的首选商城">
+    <link rel='stylesheet' href='css/basic.css'>
+    <link rel='stylesheet' href='fonts/iconfont.css'>
+
+    <link rel='stylesheet' href='css/details.css'>
+
+
+
+</head>
+
+<body>
+
+    <!-- 顶部导航 -->
+    <div class="header_top" id="header_top">
+        <div class="top_mid po_re">
+            <div style="position: relative;">
+                <!--tabs开始-->
+
+                <!--tabs end-->
+            </div>
+            <div class="top_mid_r po_re ">
+                <ul class="nav_list">
+                    <li class="drop-menu-effect">
+                        <a href="https://mall.gree.com/" class="selected2">商城首页</a>
+                        <i class="font_ec mar_l10">|</i></li>
+                    <li>
+                        <a href="/order/queryBuyer" id="myOrder" onclick="closeMenu(61)"><span>我的订单</span><i class="font_ec mar_l10 ">|</i></a>
+                    </li>
+                    <li class="drop-menu-effect"><a class=""><span id="openShopId"><a href="/user/login" class="">开店申请</a><i class="mar_lr10 font_ec">|</i><a href="/distribute/register/initRegister" class="mar_l10">注册分销商</a><i class="mar_lr10 font_ec">|</i></span>
+                        </a>
+                    </li>
+                    <li class="drop-menu-effect"><a href="javascript:void(0);" class="alink_collect"><i class="iconfont">&#xe611</i><span>我的收藏</span></a>
+
+                    </li>
+                    <li class="drop-menu-effect"><a href="#" class=""><span>客服中心</span></a>
+
+                    </li>
+                </ul>
+            </div>
+            <!-- top_mid_r 结束-->
+
+
+
+            <!-- 登录 注册-->
+            <div class="top_mid_l po_re" style="margin-left: 50px">
+                <span id="top_login_id" class="mar_l10 font_fe"><a href="login.html">登录</a><i class="mar_lr10 font_ec">|</i><a href="registor.html">注册</a></span>
+            </div>
+            <!--top_mid_l end-->
+
+        </div>
+        <!--top_mid end-->
+    </div>
+
+    <!-- 搜索框 -->
+    <div id="header">
+        <div class="left_img">
+            <a href="https://mall.gree.com/">
+
+                <img id="logo" src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/6/15/3f5af165-8c46-45ce-a53d-aa62db703d63.gif" title="万人万店">
+            </a>
+        </div>
+
+        <div class="mid_search" style="width: 740px">
+            <!--(输入框和搜索按钮)-->
+            <div class="search po_re" id="head_search" style="display:inline-block;width: 510px">
+                <div class="big_class">
+                    <span id="search_select" class="pointer">商品<input type="hidden" id="type" value="product"></span>
+
+                </div>
+                <input style="width: 340px" autocomplete="off" name="keyword" id="keyword_searchForm" type="text" class="search_input" value="" placeholder="请输入要搜索的信息" readonly="" onfocus="this.removeAttribute('readonly');">
+                <button type="button" class="button_search wid_80 po_ab pa_01 pointer js_search" style="outline: none;cursor:pointer;">
+										搜 索
+								</button>
+            </div>
+            <img src="img/headicon.jpg" style="margin-left: 20px;">
+            <!--search po_re end (输入框和搜索按钮)-->
+
+            <!--（中间搜索框下的标签）-->
+            <div class="Tag" style="margin-top: -20px"><a href="#"><span class="mall_word">冰箱</span></a><a href="#"><span class="mall_word">滚筒洗衣机</span></a><a href="#"><span class="mall_word">格力三代手机</span></a><a href="#"><span class="mall_word">金贝</span></a></div>
+            <!--Tag（中间搜索框下的标签） end-->
+
+        </div>
+        <!--mid_search (包着中间搜索的框)end-->
+
+        <div class="right_img">
+            <div class="button po_re" id="shop_car">
+                <span class="icon_chart"><b class="tip" id="cartQuantity">2</b></span><a class="like_shop" onclick="window.open('/shopCart/toCart')">购物车商品</a>
+                <div id="mini_cart" class=" right_botton box-shadow1 shopping hide" style="display: none;">
+
+                    <!--获取oss和ftp切换的状态值-->
+                    <input type="hidden" name="cartQuantity" value="2">
+                    <div style="text-align: left; text-indent: 8px; background-color: #fafafa; margin: 10px;">最新加入的商品</div>
+                    <div class="car_shopping" style="overflow-x: hidden;">
+                        <table style="width:380px; height:75px; line-height: 23px; text-align: left; margin-left: 10px;">
+                            <tbody>
+                                <tr>
+                                    <td class="wid_90">
+                                        <a href="/goods/product/details?id=1000029075&amp;skuId=1000046336" target="_BLANK">
+                                            <!--转换-->
+                                            <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2019/3/23/603fe6e0-3cfa-40e4-85b4-e5ab0d53635c.jpg" width="75" height="75">
+                                        </a>
+                                    </td>
+                                    <td class="wid_180" style="height: 75px;">
+                                        <a title="空气净化器 精准检测 清新满屋 KJ500G-A01(过滤式) 白色" href="/goods/product/details?id=1000029075&amp;skuId=1000046336" target="_BLANK">
+																													空气净化器 精准检测 清新满屋 KJ50 ...
+																		</a>
+                                        <div class="wid_180 over_ell">
+                                            颜色：白色&nbsp; &nbsp;&nbsp;
+                                        </div>
+                                        <br>
+                                    </td>
+                                    <td class="wid_90 ">
+                                        2399.00*2
+                                        <br>
+                                        <a class="font_1c" href="javascript:void(0);" onclick="removeMiniPro('1000046336')">删除</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class=" fr mar_r20">
+                        共<i class="font_fe">2</i>件商品，金额总计：<i class="font_fe">￥4798.00</i>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="fr mar_tb10 mar_r20">
+                        <button type="button" class="button_1 hei_40 " onclick="window.open('/shopCart/toCart')">去购物车结账</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--right_img end-->
+    </div>
+
+    <div class="wid_auto mar_tb20 bg_05 pad_tb20 box-shadow1" style="position: relative;overflow: auto">
+        <!--选择收货地址开始 -->
+        <!--tabs开始-->
+        <div class="nTab_address box-shadow1 hide cursor bg_06" style="top: 300px">
+            <!-- 标题开始 -->
+            <div class="TabTitle_address">
+                <ul id="Tabaddress">
+                    <li class="active">
+                        <span class="js_tabAddress_one">请选择</span>
+                        <i class="demo-icons fa-angle-down font_14b"></i>
+                    </li>
+                    <li class="normal">
+                        <span class="js_tabAddress_two">请选择</span>
+                        <i class="demo-icons fa-angle-down font_14b"></i>
+                    </li>
+                    <li class="normal">
+                        <span class="js_tabAddress_three">请选择</span>
+                        <i class="demo-icons fa-angle-down font_14b"></i>
+                    </li>
+                    <li class="normal">
+                        <span class="js_tabAddress_four">请选择</span>
+                        <i class="demo-icons fa-angle-down font_14b"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 内容开始 -->
+            <div class="TabContent_address">
+                <!-- 全部购买咨询 的内容开始 -->
+                <div>
+                </div>
+                <div class="none">
+                    <ul id="Tabaddress_Content1">
+
+                    </ul>
+                </div>
+                <div class="none">
+                    <ul id="Tabaddress_Content2">
+
+                    </ul>
+                </div>
+                <div class="none">
+                    <ul id="Tabaddress_Content3">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--tabs end-->
+        <div class="wid_1160 bg_06 border-4">
+            <!--面包屑开始-->
+
+            <!--面包屑结束-->
+            <!--左侧图片开始-->
+            <div class="left_pic">
+                <div id="vertical" class="bigImg">
+
+                </div>
+                <!--bigImg end-->
+
+                <div class="smallImg">
+                    <div class="scrollbutton smallImgUp disabled"><i id='left'>&lt</i></div>
+                    <div id="imageMenu">
+                        <ul>
+
+                        </ul>
+                    </div>
+                    <div class="scrollbutton smallImgDown"><i id='right' style='float:none;'>&gt</i></div>
+                </div>
+                <!--smallImg end-->
+                <div id="bigView" style="width: 472.362px; height: 422.111px; top: 80px; left: 430px; display: none;">
+
+                </div>
+                <!--下图片下面的分享信息 商品信息 开始 -->
+                <div class="mar_t10">
+                    <span class="mar_l10 fr cursor js_favourite mar_b10">
+
+                                                            <span id="shoucangshangpin">
+                                     <i class="demo-icons fa-star font_ffd font_14" style="color: #9c9c9c"></i>
+                                     <a title="点击收藏商品">收藏商品</a>
+                                </span>
+
+                    </span>
+                </div>
+                <!--下图片下面的分享信息 商品信息 开始 -->
+
+            </div>
+            <!--left_pic end -->
+            <!--左侧图片结束-->
+            <!--中间文字购买信息开始-->
+            <div class="mid po_re">
+                <div class="mid_tit">
+
+
+                </div>
+                <div class="mid_font1">
+                    <ul>
+                        <li>
+                            <div class="mid_f_left">
+                                <!--6月5号上线-->
+                                售价：
+                            </div>
+
+                            <div class="mid_f_right" id="shoujia"><strong class="font_fe font_16"><span id="itemPrice_js" style="text-decoration: none;">￥199.00</span></strong></div>
+
+                        </li>
+                        <!--6月5号上线-->
+                        <li>
+                            <div class="mid_f_left">建议零售价：</div>
+                            <div class="mid_f_right">
+                                <span style="text-decoration: line-through;">￥ 299.00</span>
+                            </div>
+                        </li>
+                        <li style="display: none;" id="cuxiaojia">
+                            <div class="mid_f_left">促销价：</div>
+                            <div class="mid_f_right">
+                                <strong class="font_fe font_16">
+                                    <span id="itemCXPrice_js"></span>
+                                </strong>
+                            </div>
+                        </li>
+                        <li class="po_re" id="cuxiaoinfo">
+                            <div class="mid_f_left">促销信息：</div>
+                            <div class="mid_f_right">
+
+                                <!--促销广告语开始-->
+                                <div id="adWords" style="display:none;"></div>
+                                <!--促销广告语结束-->
+                                <!-- 满减 -->
+                                <div style="display:none;" id="promotion_manjian">
+                                    <em class="manjian" id="promotionType_manjian">满减</em>
+                                    <span class="font_fe" id="promotionMsg_manjian"></span>
+                                    <a class="js_qing_manjian cursor" id="promotionInfo_manjian">&nbsp;&nbsp;详情 <s class="s-arrow">&gt;&gt;</s></a>
+                                </div>
+                                <!-- 打折直降-->
+                                <div style="display:none" id="promotion_zhijiang">
+                                    <em class="manjian promotionType_zhijiangText" id="promotionType_zhijiang">直降为</em>
+                                    <span class="font_fe" id="promotionMsg_zhijiang"></span><br>
+                                    <em class="manjian" id="promotionType_zhijiang">限量</em>
+                                    <span class="font_fe" id="promotionMsg_zj_promotionNum"></span>
+                                    <div id="promotionType_zhi_price_box" style="display: none">
+                                        <em class="manjian" id="promotionType_zhi_price">直降价</em>
+                                        <span class="font_fe" id="promotionMsg_ms_zhi_promotionPrice"></span>
+                                    </div>
+                                </div>
+                                <!-- 秒杀-->
+                                <div style="display:none" id="promotion_miaosha">
+                                    <em class="manjian" id="promotionType_miaosha">秒杀</em>
+                                    <span class="font_fe" id="promotionMsg_miaosha"></span><br>
+                                    <em class="manjian" id="promotionType_zhijiang">限量</em>
+                                    <span class="font_fe" id="promotionMsg_ms_promotionNum"></span><br>
+                                    <div id="promotionType_price_box" style="display: none">
+                                        <em class="manjian" id="promotionType_price">秒杀价</em>
+                                        <span class="font_fe" id="promotionMsg_ms_promotionPrice"></span>
+                                    </div>
+                                </div>
+
+                                <!-- 买赠-->
+                                <div class="prom-gifts clearfix" id="prom_gifts" style="display: none">
+                                    <span class="prom-gifts-title">
+                                        <em>赠品</em>
+                                    </span>
+                                    <div class="prom-gifts-list" id="prom_gifts_list"></div>
+                                </div>
+
+                                <div class="prom-full-return clearfix" id="prom_full_return" style="display: none">
+                                    <span class="prom-full-title">
+                                        <em id="full_return_info"></em>
+                                    </span>
+                                    <div class="prom-full-list" id="prom_full_list"></div>
+                                </div>
+
+                                <div class="time fl " style="display:none" id="promotion_miaosha_down">
+                                    <span><span id="t_d">00</span> <span class="labletext">天</span></span>
+                                    <span><span id="t_h">00</span><span class="labletext">时</span></span>
+                                    <span><span id="t_m">00</span><span class="labletext">分</span></span>
+                                    <span><span id="t_s">00</span><span class="labletext">秒</span></span>
+                                </div>
+
+                                <div class="clear"></div>
+                                <!--限购-->
+
+
+                                <!--团购开始-->
+                                <div id="groupBuyInfo" class="mar_b5" style="display: none">
+                                    <div class="activity-banner clearfix pad_r10">
+                                        <div class="activity-type">
+                                            <i class="sprite-seckilling"></i>
+                                            <strong>团购</strong>
+                                        </div>
+                                        <div class="activity-message">
+                                            距离结束
+                                            <span id="time_d">NaN</span>天<span id="time_h">NaN</span>时<span id="time_m">NaN</span>分<span id="time_s">NaN</span>秒
+                                        </div>
+                                    </div>
+                                    <div class="mar_t5">
+                                        <p>团购人数： <strong class="mar_r30 font_65" id="groupNumber"></strong> 已参与人数 <strong id="groupBuyNumbers" class="font_65">20</strong></p>
+                                        <span class="groupbuy_goods_progress">
+                                               <i class="groupbuy_goods_progress_txt">参团进度 <strong id="group_progress" class="font_65"></strong> </i>
+                                               <i class="groupbuy_goods_progress_inner">
+                                                   <b class="groupbuy_goods_progress_completed" style="width:44%"></b>
+                                               </i>
+                                         </span>
+                                    </div>
+                                </div>
+                                <!--团购结束-->
+
+                                <!--优惠券-->
+
+
+                                <div style="display: none;" id="summary-quan-wraper"></div>
+                            </div>
+                            <div class="wid_440 js_xiang_manjian min-hei bg_06 box-shadow1 po_ab none" style="z-index: 100; left: 5px; top: 5px;">
+                                <div class="tit mar_lr10 mar_r10 border-6">
+                                    <a><span class="mar_r20 font_14b">满减</span><span id="promotionTime"></span></a><a class="fr js_down_manjian cursor">收起</a>
+                                </div>
+                                <div class="mar_l10" id="promotionList_manjian">
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="mid_f_left">商品评分：</div>
+                            <div class="mid_f_right" id="scoreId">
+                                <i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-on"></i></div>
+                        </li>
+                        <li id="distrib" class="po_re">
+                            <div class="mid_f_left">配送至：</div>
+                            <div class="mid_f_right">
+
+                                <div class="text border-4 js_guanqu cursoe" style="float: none;display: inline-block">
+                                    <span class="js_address cursoe" title="北京市">北京市</span>
+                                    <input type="hidden" id="defaultToCode" name="defaultToCode" value="110000">
+                                    <b class="fa-angle-down cursoe"></b>
+                                </div>
+
+                                <!--text border-4 end-->
+                                <div class="store-prompt" id="store-prompt-ESM" style="float: none;display: inline-block;vertical-align: top;line-height: 24px">
+                                    包邮
+                                </div>
+                                <!--store-prompt end-->
+                                <input type="hidden" id="qty_js12" value="99980">
+                            </div>
+                            <i class="fl mar_r10" style="margin-left: 90px;line-height: 1.5" title="格力官方自营旗舰店">由格力官方自营旗舰店 发货</i>
+                            <i class="fl mar_r10" style="margin-left: 90px;line-height: 2.5">
+                                        <div id="isGoods" style="display: none">
+                                            <p class="describe" style="color: red">本店不支持该区域配送，进入所在城市<a id="dianpu" href="javascript:void(0);" onclick="morendianpu();"><img src="../../assets/images/shoplogo.png"></a></p>
+                                        </div>
+                                        </i>
+                        </li>
+
+                        <li class="xiaoshouAttrs">
+                            <div class="mid_f_left attrName_js" name="30409:颜色" style="height:auto;" title="颜色">
+                                颜色：
+                            </div>
+                            <div class="mid_f_right">
+                                <!--选中用border-8 的样式 然后加上<b class="po_ab pa_04"></b>标签-->
+                                <span class="press_classes po_re border-8 js_attr" name="742398:黄色" title="黄色">
+                                                                                                                                                                                                            黄色
+                                                                                                                                        <b class="po_ab pa_04"></b>
+                                                                </span>
+                            </div>
+                            <div class="clear"></div>
+                        </li>
+
+                        <li>
+                            <div class="mid_f_left">数量：</div>
+                            <div class="mid_f_right" style="width: auto">
+                                <div class="wrap-input">
+                                    <a class="btn-reduce border-4" href="javascript:void(0)">-</a>
+                                    <input value=1 class="text border-4 number_js" id="productNumD">
+                                    <a class="btn-add border-4" href="javascript:void(0);">+</a>
+                                </div>
+                            </div>
+                            <div class="mid_f_right" style="width: auto">
+                                <div class="wrap-input">
+                                    <input disabled="disabled" class="text border-4" value="有货" id="inventory" style="border: none">
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="limitshop" id="limitshop" style="display:none">
+                    <span class="limitnum">每个ID限购<span>  </span>件</span>
+                    <div class="grap">
+                        <div class="money"><span>￥</span></div>
+                        <div class="triangle">
+                            <div class="triangle1"></div>
+                            <div class="triangle2"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- mid_font1 end-->
+                <div class="mid_font2 border-4 js_buyList" style="display:none;">
+                    <!--标题 开始 -->
+                    <!-- <ul class="font_14b bg_05 border-3">
+                        <li>品牌</li>
+                        <li>单价</li>
+                        <li>活动价</li>
+                        <li>库存量</li>
+                        <li>采购量</li>
+                    </ul> -->
+                    <!--标题结束 -->
+                    <!--内容一行循环一个ul 开始 -->
+                    <!-- <ul>
+                        <li>北京印刷出版社</li>
+                        <li>100.00￥</li>
+                        <li>80.00￥</li>
+                        <li>100件</li>
+                        <li>
+                        <div class="wrap-input">
+                            <a class="btn-reduce border-4" href="#" onclick="minus(obj)">-</a>
+                            <input value="1" class="text border-4" onkeyup="handEntry(obj)">
+                            <a class="btn-add border-4" href="#" onclick="plus(obj)">+</a>
+                        </div>
+                        </li>
+                    </ul> -->
+                    <!--内容一行循环一个ul end -->
+
+                </div>
+                <!--mid_font2 end-->
+                <!-- <div class="mid_font3 js_buyAll" style="display:none;">
+                    <ul>
+                        <li>共计<i class="mar_lr10 collectNum_js"></i>件商品</li>
+                        <li>总金额：<i class="font_fe font_14b">￥<span class="collectMoney_js"></span></i></li>
+                    </ul>
+                </div> -->
+
+                <!-- 立即参团-->
+                <div class="tb-btn-buy tb_btn-sku" style="display:none;" onclick="toGroupBuy()">
+                    <a href="javascript:0" id="J_Group" style="background: rgb(255, 237, 237); color: rgb(196, 0, 0); border: 1px solid rgb(196, 0, 0);">立即参团</a>
+                </div>
+
+                <div id="jsattrId1">
+                    <div class="mall_button" id="addCart" style="display:true">
+                        <span class="icon"></span>加入购物车
+                    </div>
+                    <div class="tb-btn-buy tb_btn-sku" id="toProOrderView" style="display:true">
+                        <a id="J_LinkBuy" class="cursor" rel="nofollow" data-addfastbuy="true" title="点击此按钮，到下一步确认购买信息。" data-spm-anchor-id="a220o.1000855.0.0">立即购买</a>
+                    </div>
+                </div>
+
+
+
+                <div class="mid_font1" id="payTypes">
+                    <ul>
+                        <li>
+                            <div class="mid_f_left">支付：</div>
+                            <!-- 如果是询价的商品，市场价就展示为空 -->
+                            <div class="mid_f_right">
+                                <div class="icon_png2 fl mar_t2"></div>
+                                <!--icon_png end -->
+                                <div class="fl wid_60">立即支付</div>
+                                <!--立即支付 end -->
+                                <input type="hidden" value="0" id="payType">
+                            </div>
+                            <!--mid_f_right end -->
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!--中间文字购买信息结束-->
+
+                <div class="wid_220 hei_180 fl" style="margin: 20px 30px 0">
+                    <h3 class="font_1c" style="padding: 0 32px;cursor: pointer;display: inline-block;" onclick="showQRCode()">移动端商品链接</h3>
+                    <p class="qrcode" id="goodsQRCode" style="display: none;">
+                        <img id="skuImg" class="code-img" src="/qRcode/itemQrCode?itemId=1000029131&amp;skuId=1000046392" width="150" height="150">
+                    </p>
+                </div>
+
+
+                <!-- 最右侧的小盒子-->
+                <div class="right_box border-4 box-shadow2">
+                    <h3 class="bg_05">商家信息</h3>
+                    <ul>
+                        <li class="right3" style="height:120px;">
+                            <div class="list">
+                                <ul>
+                                    <li style="width: 200px;">服务评价：
+                                        <span id="shopReputationLi">
+									<i class="heart-on"></i><i class="heart-on"></i><i class="heart-on"></i><i class="heart-on"></i><i class="heart-half"></i></span>
+                                        <i class="font_fe fr">
+                                                                                            4.7分
+                                                                                    </i>
+                                    </li>
+                                    <li style="width: 200px;">描述相符：
+                                        <span id="shopDescriptionLi">
+									<i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-half"></i></span>
+                                        <i class="font_fe fr">
+                                                                                            4.7分
+                                                                                    </i>
+                                    </li>
+                                    <li style="width: 200px;">发货速度：
+                                        <span id="shopArrivalLi">
+									<i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-half"></i></span>
+                                        <i class="font_fe fr">
+                                                                                            4.6分
+                                                                                    </i>
+                                    </li>
+                                    <li style="width: 200px;">态度服务：
+                                        <span id="shopServiceLi">
+									<i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-on"></i><i class="star-half"></i></span>
+                                        <i class="font_fe fr">
+                                                                                            4.6分
+                                                                                    </i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="logoLi">
+                            <a href="/shopItemListIndexController/toIndex?shopId=2000001026">
+                                <img src="https://gelimall.oss-cn-shenzhen.aliyuncs.com/album/2018/8/14/d27f2c7a-ce6e-4b8d-8ef0-dc3d17e86fe9.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="left">店铺名称：</li>
+                        <li class="right1">
+                            <a href="/shopItemListIndexController/toIndex?shopId=2000001026">格力官方自营旗舰店</a>
+
+                        </li>
+
+                        <li class="left">所&nbsp;在&nbsp;地&nbsp;：</li>
+                        <li class="right1 cursor" title="广东省珠海市香洲区金鸡西路789号" style="word-wrap:break-word">
+                            广东省珠海市香洲区金鸡西路789号
+                        </li>
+                        <li class="left">客服电话：</li>
+                        <li class="right1 customerMobile">
+                            <strong></strong>
+                        </li>
+                        <li class="right2">
+                            <style type="text/css">
+                                .btn-shop {
+                                    display: inline-block;
+                                    line-height: 20px;
+                                    padding: 2px 5px;
+                                    background: #f2f2f2 repeat scroll;
+                                    border: 1px solid #ddd;
+                                    border-radius: 2px;
+                                    color: #333;
+                                    display: inline-block;
+                                    text-align: center;
+                                    text-decoration: none;
+                                }
+                            </style>
+                            <!-- 进入店铺  二级域名 -->
+
+                            <a href="/shopItemListIndexController/toIndex?shopId=2000001026" class="font_65">进入卖家店铺</a>
+
+                            <a href="javascript: void(0);" onclick="addfavorite(false)" class="js_favourite_shop  font_65 mar_l10"><i class="demo-icons font_14 fa-star"></i>收藏店铺</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 最右侧的小盒子-->
+
+            </div>
+            <!-- 右侧div结束-->
+        </div>
+        <!--1160 -->
+    </div>
+    <script src='script/js/jquery.js'></script>
+    <script src='script/js/cookie.js'></script>
+    <script src='script/js/details.js'></script>
+</body>
+
+</html>
