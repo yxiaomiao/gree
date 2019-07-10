@@ -7,12 +7,17 @@
 
         $.each($arrsid, function(i, value) {
             goodslist(value, $arrnum[i])
-            $('.empty-cart').hide()
+            $('.empty-cart').hide() //如果有商品把购物车空空的盒子隐藏
         })
     } else {
         $('.empty-cart').show()
     }
-    //数据渲染到购物车
+    //购物车为空点击跳转首页
+    $('.empty-cart-msg a').on('click', function() {
+            location.href = 'index.html';
+
+        })
+        //数据渲染到购物车
     function goodslist(sid, num) {
         $.ajax({
             url: 'http://10.31.158.60:8080/gree/gree/php/index.php',

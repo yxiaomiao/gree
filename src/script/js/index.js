@@ -1,17 +1,3 @@
-;
-! function($) {
-    //登录之后，获取cookie的用户名 
-    if ($.cookie('tel')) { //头部登录信息更改成获取后 的用户名信息
-        $('#top_login_id').get(0).innerHTML = `<span class="font_82" id="goalldd">Hi,
-        <a href="/order/queryBuyer?otoFlag=0">G${$.cookie('tel')}</a>&nbsp;欢迎！</span>&nbsp;&nbsp;
-        <a href="login.html">[退出]</a>
-        <i class="mar_lr10 font_ec">|</i>
-        <a href="/backlog/backlogInfo" onclick="closeMenu()">个人中心</a>
-        `
-    } else {
-        $('#top_login_id').get(0).innerHTML = `<a href="login.html">登录</a><i class="mar_lr10 font_ec">|</i><a href="registor.html">注册</a>`
-    }
-}(jQuery)
 //购物车获取cookie数据
 ;
 ! function($) {
@@ -116,13 +102,18 @@
     const $navlist = $('.Nav_classify ul li')
 
     $navlist.hover(function() {
+
         $(this).addClass('mc_classify_list01').siblings().removeClass('mc_classify_list01')
         $('.mc_classify_prompt').css('display', 'block')
     }, function() {
+        $('.mc_classify_prompt').css('display', 'none')
         $(this).removeClass('mc_classify_list01')
+    })
+    $('.mc_classify_prompt').hover(function() {
+        $('.mc_classify_prompt').css('display', 'block')
+    }, function() {
         $('.mc_classify_prompt').css('display', 'none')
     })
-
 }(jQuery)
 //商品盒子遮罩效果
 ;
@@ -176,7 +167,7 @@
         let str = ''
 
         $.each(piclist, function(index, value) {
-            console.log(value)
+
             str += `<li>
             <!--商品图片 -->
             <a class="cursor" href='http://10.31.158.60:8080/gree/gree/src/details.html?sid=${value.picid}' title="${value.title}" target="_blank">
@@ -202,7 +193,7 @@
 
 
 }(jQuery)
-//3楼tab切换
+//tab切换
 ;
 ! function($) {
     $('.FloorList-tit ul li').each(function(index, element) {
@@ -217,4 +208,37 @@
 
 
 
+}(jQuery)
+//楼梯效果
+;
+! function($) {
+    //滚动条移动到一定位置显示楼梯
+    $(window).on('scroll', function() {
+            let $scrolltop = $(window).scrollTop()
+
+            if ($scrolltop > 1100 && $scrolltop < 4100) {
+                $('#leftBar').show()
+            } else {
+                $('#leftBar').hide()
+            }
+
+
+            $('#floors>div').each(function(index, element) {
+                let $loucengtop = $('#floors>div').eq(index).offset().top + 100
+                if ($loucengtop >= $scrolltop) {
+                    $('#leftBar div').eq(index).addClass('current').siblings().removeClass('current')
+                    return false
+                }
+
+            })
+        })
+        //点击楼层
+
+    $('#leftBar div').on('click', function() {
+        $(this).addClass('current').siblings().removeClass('current')
+        let $loucengtop = $('#floors>div').eq($(this).index()).offset().top - 130
+        $('html,body').animate({
+            scrollTop: $loucengtop
+        })
+    })
 }(jQuery)
