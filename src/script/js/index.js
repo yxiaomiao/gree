@@ -107,12 +107,14 @@
         $('.mc_classify_prompt').css('display', 'block')
     }, function() {
         $('.mc_classify_prompt').css('display', 'none')
-        $(this).removeClass('mc_classify_list01')
+            // $(this).removeClass('mc_classify_list01')
     })
     $('.mc_classify_prompt').hover(function() {
         $('.mc_classify_prompt').css('display', 'block')
+
     }, function() {
         $('.mc_classify_prompt').css('display', 'none')
+        $(this).siblings().removeClass('mc_classify_list01')
     })
 }(jQuery)
 //商品盒子遮罩效果

@@ -183,6 +183,7 @@
 
 }(jQuery)
 
+
 //点击立即购买判断
 $('#J_LinkBuy').on('click', function() {
     alert(1)
