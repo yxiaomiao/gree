@@ -27,7 +27,7 @@
             $.each(piclist, function(index, value) { //对于加入购物车的数据进行遍历
                 if (sid == value.picid) {
 
-                    let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆.goods-item里的明细
+                    let $clonebox = $('.goods-item:hidden').clone(true); //克隆.goods-item里的明细
                     $clonebox.find('.goods-pic').find('img').attr('src', value.url) //更改商品图片路径
                     $clonebox.find('.goods-pic').find('a').attr('href', 'http://10.31.158.60/gree/gree/src/details.html?sid=' + value.picid)
                     $clonebox.find('.goods-pic').find('img').attr('sid', value.picid) //给图片添加SID
@@ -58,7 +58,7 @@
     }
 
     //全选商品
-    $('.allsel').on('click', function() { //全选按钮
+    $('.allsel').on('click', function() { //全选按钮on绑定事件适用于动态创建的元素
         if ($('.allsel').prop('checked')) {
             $('.b-checkbox input').prop('checked', true)
         } else {
@@ -69,14 +69,14 @@
 
     //单选按钮 
     $('.b-checkbox input').on('click', function() {
-            if ($('.b-checkbox input').size() - 1 == $('input:checked').not('.allsel').length) {
-                $('.allsel').prop('checked', true) //如果商品明细的复选框都选上，则全选按钮的勾选上
-            } else {
-                $('.allsel').prop('checked', false) //如果商品明细的复选框有个没选上，则全选按钮的勾去掉
-            }
-            priceall()
-        })
-        //商品数量新增
+        if ($('.b-checkbox input').size() - 1 == $('input:checked').not('.allsel').length) {
+            $('.allsel').prop('checked', true) //如果商品明细的复选框都选上，则全选按钮的勾选上
+        } else {
+            $('.allsel').prop('checked', false) //如果商品明细的复选框有个没选上，则全选按钮的勾去掉
+        }
+        priceall()
+    })
+
 
     $('.quantity-add').on('click', function() {
             console.log($(this).parents('.goods-item').html())
