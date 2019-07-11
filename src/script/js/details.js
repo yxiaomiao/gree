@@ -186,5 +186,12 @@
 
 //点击立即购买判断
 $('#J_LinkBuy').on('click', function() {
-    alert(1)
+    if ($.cookie('tel')) {
+
+        $('#addCart').click()
+        $('#addCartBomb').css('display', 'none')
+        location.href = 'cart.html'
+    } else {
+        alert('请先登录，然后再购买商品！')
+    }
 })

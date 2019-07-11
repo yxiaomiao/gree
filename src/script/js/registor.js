@@ -144,6 +144,9 @@
             qrmm = false;
 
         }
+        if (!$check) {
+            alert('请勾选同意协议')
+        }
         if (!telflag || !szmm || !qrmm || !$check) {
 
             return false

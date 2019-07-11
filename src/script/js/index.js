@@ -35,14 +35,9 @@
             let timer = null
             let $num = 0
             let bstop = true
-            let $firstclone = $picli.eq($picli.length - 1).clone(true)
             let $lastclone = $picli.eq(0).clone(true)
             $ul.append($lastclone)
-            $ul.prepend($firstclone)
-            $ul.css({
-                width: $liwidth * ($btnli.length + 2),
-                left: -$liwidth
-            })
+            $ul.css({})
             $btnli.on('click', function() {
                     tabswitch($(this).index())
                 })
@@ -50,16 +45,16 @@
             function tabswitch(num) {
                 $btnli.eq(num).addClass('active').siblings().removeClass('active')
                 $ul.stop(true).animate(({
-                    left: -$liwidth * (num + 1)
+                    left: -$liwidth * (num)
                 }), function() {
                     if (num == $btnli.length) {
                         $ul.css({
-                            left: -$liwidth
+                            left: 0
                         })
                         $num = 0
                     } else {
                         $ul.animate(({
-                            left: -$liwidth * (num + 1)
+                            left: -$liwidth * (num)
                         }))
                     }
                     bstop = true
@@ -122,10 +117,12 @@
 ! function($) {
     $.fn.extend({
         zhezhao: function() {
-            $(this).find('ul li').hover(function() {
+            $(this).find('.FloorList ul li').hover(function() {
                 $(this).animate({
                     opacity: 0.7
+
                 })
+
 
             }, function() {
 
@@ -223,8 +220,6 @@
             } else {
                 $('#leftBar').hide()
             }
-
-
             $('#floors>div').each(function(index, element) {
                 let $loucengtop = $('#floors>div').eq(index).offset().top + 100
                 if ($loucengtop >= $scrolltop) {

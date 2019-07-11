@@ -13,8 +13,8 @@
         $('.empty-cart').show()
     }
     //购物车为空点击跳转首页
-    $('.empty-cart-msg a').on('click', function() {
-            location.href = 'index.html';
+    $('.empty-cart:visible .empty-cart-msg a').on('click', function() {
+            $(this).attr('href', 'index.html')
 
         })
         //数据渲染到购物车
@@ -26,7 +26,8 @@
 
             $.each(piclist, function(index, value) { //对于加入购物车的数据进行遍历
                 if (sid == value.picid) {
-                    var $clonebox = $('.goods-item:hidden').clone(true, true); //克隆.goods-item里的明细
+
+                    let $clonebox = $('.goods-item:hidden').clone(true, true); //克隆.goods-item里的明细
                     $clonebox.find('.goods-pic').find('img').attr('src', value.url) //更改商品图片路径
                     $clonebox.find('.goods-pic').find('a').attr('href', 'http://10.31.158.60/gree/gree/src/details.html?sid=' + value.picid)
                     $clonebox.find('.goods-pic').find('img').attr('sid', value.picid) //给图片添加SID
@@ -42,8 +43,8 @@
     }
     //计算总价和商品
     function priceall() {
-        var $sum = 0
-        var $num = 0
+        let $sum = 0
+        let $num = 0
         $('.goods-item:visible').each(function(index, element) {
             if ($(element).find('.cart-checkbox input').prop('checked')) {
                 $sum += parseInt($(element).find('.b-sum').find('strong').html())
@@ -76,8 +77,10 @@
             priceall()
         })
         //商品数量新增
-    $('.quantity-add').on('click', function() { //增加
-            var $count = $(this).parents('.goods-item').find('.quantity-form input').val() //通过父元素获取
+
+    $('.quantity-add').on('click', function() {
+            console.log($(this).parents('.goods-item').html())
+            let $count = $(this).parents('.goods-item').find('.quantity-form input').val() //通过父元素获取
             $count++
             $(this).parents('.goods-item').find('.quantity-form input').val($count)
             let $price = $(this).parents('.goods-item').find('.b-price strong').html()
@@ -144,6 +147,7 @@
                         $(this).remove()
                         let $sid = $(this).find('.goods-pic img').attr('sid')
                         delcookie($sid)
+
                     }
                 })
 
@@ -151,6 +155,7 @@
         } else {
             alert('未选中删除的商品，请选中对应的商品在点击删除')
         }
+        priceall()
     })
 
     //获取cookie
