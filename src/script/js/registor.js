@@ -150,8 +150,12 @@
         if (!telflag || !szmm || !qrmm || !$check) {
 
             return false
+        } else {
 
+            $.cookie('tel', '', { expires: -1 })
+            location.href = 'index.html'
         }
+
 
 
     })

@@ -143,12 +143,12 @@
     </div>
     <!-- 主体 -->
     <div>
-        <form action='http://10.31.158.60:8080/gree/gree/php/registor.php' class='regform' method="POST">
+        <form action='http://10.31.158.60:8080/gree/gree/php/registor.php' class='regform' method="POST" autocomplete="off">
             <legend>用户注册</legend>
 
-            <p><label for=''><span style='color:red'>*</span>手机</label><input type='text' name='telphone' placeholder="请输入手机" id='tel'><br><span class='telspan'></span></p>
-            <p><label for=''><span style='color:red'>*</span>请设置密码</label><input type='password' name='password' placeholder="请输入密码" id='password'><br><span class='passspan'></span></p>
-            <p><label for=''><span style='color:red'>*</span>请确认密码</label><input type='password' placeholder="请确认密码" id='qrmm'><br><span class='qrmmspan'></span></p>
+            <p><label for=''><span style='color:red'>*</span>手机</label><input type='text' name='telphone' placeholder="请输入手机" id='tel' autocomplete="off"><br><span class='telspan'></span></p>
+            <p><label for=''><span style='color:red'>*</span>请设置密码</label><input type='password' name='password' placeholder="请输入密码" id='password' autocomplete="off"><br><span class='passspan'></span></p>
+            <p><label for=''><span style='color:red'>*</span>请确认密码</label><input type='password' placeholder="请确认密码" id='qrmm' autocomplete="off"><br><span class='qrmmspan'></span></p>
             <div><input type='checkbox' name='check' id='check'><span>同意《格力官方商城用户注册协议》和《隐私声明》</span></div>
             <div><input type='submit' value='同意协议并注册' name='submit' id='submit'>
 
@@ -260,6 +260,7 @@
 
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script src='script/js/jquery.cookie.js'></script>
     <script src='script/js/registor.js'></script>
 
 </body>
